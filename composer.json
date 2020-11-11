@@ -1,0 +1,14 @@
+
+{
+    "name": "personal/mustafagun",
+    "description": "Mustafa Gün Kişisel Web Sitsi",
+    "authors": [
+        {
+            "name": "Mustafa Gün",
+            "email": "iletisim@mustafagun.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}

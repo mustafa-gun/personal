@@ -1,0 +1,279 @@
+:root {
+  --light-gray: #b9b8ba;
+  --broken-white: #f9f9f9;
+  --dark1: #0c0910;
+  --dark2: #12101d;
+  --dark-gray: #1c1c1f;
+  --night-blue: #121035;
+  --night-blue1: #131a46;
+  --night-blue2: #134680;
+  --night-blue3: #253169;
+  --night-blue4: #21265d;
+  --night-blue5: #211c52;
+  --night-purple: #4b347a;
+  --dark-pink: #652943;
+  --dark-navy: #0b133a;
+  --dark-grayish-purple: #3f3246;
+  --dull-red: #791a32;
+  --dull-red1: #4c1123;
+  --dull-pink: #5f1d39;
+  --black: #000;
+  --bg-gray: #6c757d;
+}
+#home {
+  background-color: #000 !important;
+  background-image: url(../img/code.jpg);
+  background-size: cover;
+}
+
+html {
+  background-image: url(https://mustafagun.com/img/new-back.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  color: var(--light-gray) !important;
+  background-color: #0000 !important;
+}
+
+a {
+  color: var(--dull-red) !important;
+  text-decoration: none !important;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+/* Navbar */
+
+.navbar {
+  box-shadow: 0 0 5px black;
+  z-index: 5 !important;
+}
+
+.navbar-text {
+  position: absolute !important;
+  right: 5px;
+  padding: 0 !important;
+}
+
+.social {
+  width: 35px;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.social:hover {
+  filter: invert(0.2);
+}
+
+.fa-github, .fa-linkedin {
+  margin-top: 2px;
+  color: #e0e0e0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--broken-white) !important;
+  transition: 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  text-shadow: 0 1px 3px #eaeaea !important;
+}
+
+.active {
+  text-shadow: 0 1px 2px #d9d9ec !important;
+}
+
+/* Navbar END */
+
+/* Jumbotron */
+#img-person {
+  width: 200px;
+  height: auto;
+  margin: 10px auto;
+  box-shadow: 0 0 10px 3px black;
+}
+
+.home {
+  background: url("../img/code.jpg") no-repeat,
+    -moz-linear-gradient(180deg, #00000000 0, #000000 100%);
+  background: url("../img/code.jpg") no-repeat,
+    -webkit-gradient(180deg, #00000000 0, #000000 100%);
+  background: url("../img/code.jpg") no-repeat,
+    -webkit-linear-gradient(180deg, #00000000 0, #000000 100%);
+  background: url("../img/code.jpg") no-repeat,
+    -o-linear-gradient(180deg, #00000000 0, #000000 100%);
+  background: url("../img/code.jpg") no-repeat,
+    -ms-linear-gradient(180deg, #00000000 0, #000000 100%);
+  background: url("../img/code.jpg") no-repeat,
+    linear-gradient(180deg, #00000000 0, #000000 100%);
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.row {
+  height: 90vh;
+}
+
+/* Jumbotron END */
+
+/* HAKKIMDA */
+.about-img {
+  width: 70%;
+  height: auto;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+
+.info-img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px !important;
+  box-shadow: 0 2px 2px 0 #000, 0 3px 1px -2px #000,
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin: auto;
+  background-image: url(https://mustafagun.com/img/person.jpg);
+  background-size: 250px;
+  background-position: top;
+}
+
+.hakkimda {
+  color: rgb(233, 233, 233);
+}
+
+
+/* Hakkımda END*/
+
+/* İletişim buton hover */
+.contact-form button:hover {
+  color: #cacaca;
+  background-color: #2b2e58;
+  box-shadow: 0 1px 6px 0px black;
+}
+
+/* ALTYAZI */
+
+/* Altyazı END */
+
+/* Mobil Görünüm */
+
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    height: 100vh !important;
+  }
+  .navbar {
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+  }
+  .nav-flex-icons {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .info-img {
+    display: block !important;
+  }
+  .about-img {
+    display: none;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .nav-flex-icons {
+    justify-content: space-evenly !important;
+  }
+  .navbar-text {
+    position: unset !important;
+  }
+  .about-title {
+    text-align: center;
+  }
+}
+
+/* Root */
+
+/* Backgrounds */
+
+.bg-gray {
+  background-color: var(--bg-gray);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.b-black {
+  background-color: var(--black);
+}
+
+.b-dark1 {
+  background-color: var(--dark1);
+}
+
+.b-dark2 {
+  background-color: var(--dark2);
+}
+
+.b-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.b-night-blue {
+  background-color: var(--night-blue);
+}
+
+.b-light-gray {
+  background-color: var(--light-gray);
+}
+
+.b-dull-red1 {
+  background-color: var(--dull-red1);
+}
+
+.b-dull-red {
+  background-color: var(--dull-red);
+}
+
+.b-dark-pink {
+  background-color: var(--dark-pink);
+}
+
+/* Colors */
+.broken-white-text {
+  color: var(--broken-white);
+}
+
+.light-gray-text {
+  color: var(--light-gray);
+}
+
+.dull-red-text {
+  color: var(--dull-red);
+}
+
+.dull-red1-text {
+  color: var(--dull-red1);
+}
+
+.dark-pink-text {
+  color: var(--dark-pink);
+}
+
+/* Buttons */
+.btn-dull-red {
+  color: #fff !important;
+  background-color: var(--dull-red) !important;
+  border-color: var(--dull-red1) !important;
+}
+.btn-dull-red:hover {
+  background-color: var(--dull-red1) !important;
+}
+/* Root END */

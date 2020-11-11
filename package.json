@@ -1,0 +1,27 @@
+{
+  "name": "mustafagun",
+  "version": "1.0.0",
+  "description": "Mustafa Gün Kişisel Web Sitesi",
+  "main": "index.php",
+  "keywords": [
+    "mustafa",
+    "gün",
+    "php",
+    "nodejs",
+    "javascript",
+    "css",
+    "web",
+    "tasarım",
+    "web",
+    "programlama",
+    "ux/ui"
+  ],
+  "author": "Mustafa Gün",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"adsadasd\""
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4"
+  }
+}

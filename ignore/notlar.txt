@@ -1,0 +1,7 @@
+inputlarda placeholder olsun
+
+site geneli hover
+
+Sağ üstteki sosyal ikonların arasını biraz daha açabilirsin
+
+bir de düzen iletişim şeklindeyse hakkımdayı da aynı şekilde yap bence. belki sol farklı bir renkle
