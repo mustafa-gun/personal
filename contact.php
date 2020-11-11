@@ -99,20 +99,19 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4" for="fname">Adınız Soyadınız:</label>
                                         <label class="control-label col-sm-4" for="fname" required>Adınız Soyadınız:</label>
+                                        <label class="control-label col-sm-4" for="fname" required >Adınız Soyadınız:</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="fName" name="contactName" placeholder="Adınızı giriniz...">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="email">E-posta Adresiniz:</label>
                                         <label class="control-label col-sm-4" for="email" required>E-posta Adresiniz:</label>
                                         <div class="col-sm-10">
                                             <input type="email" class="form-control" id="email" placeholder="example@example.com" name="contactMail">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="comment">Mesajınız:</label>
                                         <label class="control-label col-sm-4" for="comment" required>Mesajınız:</label>
                                         <div class="col-sm-10">
                                             <textarea class="form-control" rows="5" id="ftext" name="contactComment" placeholder="Lütfen mesajınızı yazınız..."></textarea>
