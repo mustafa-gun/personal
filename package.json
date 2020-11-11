@@ -19,7 +19,7 @@
   "author": "Mustafa Gün",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"adsadasd\""
+    "test": "echo ""
   },
   "dependencies": {
     "imagesloaded": "^4.1.4"
