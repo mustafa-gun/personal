@@ -98,8 +98,6 @@
                                 <form action="" method="POST">
                                     <div class="form-group">
                                         <label class="control-label col-sm-4" for="fname">Adınız Soyadınız:</label>
-                                        <label class="control-label col-sm-4" for="fname" required>Adınız Soyadınız:</label>
-                                        <label class="control-label col-sm-4" for="fname" required >Adınız Soyadınız:</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="fName" name="contactName" placeholder="Adınızı giriniz...">
                                         </div>
