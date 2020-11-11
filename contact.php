@@ -99,7 +99,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-4" for="fname">Adınız Soyadınız:</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="fName" name="contactName" placeholder="Adınızı giriniz...">
+                                            <input type="text" class="form-control" id="fName" name="contactName" placeholder="Adınızı giriniz..." required>
                                         </div>
                                     </div>
 
