@@ -61,7 +61,6 @@
                 width: 45% !important;
                 height: 7% !important;
                 margin: 3px;
-                z-index: -1 !important;
             }
 
             .content {
