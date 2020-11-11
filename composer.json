@@ -8,6 +8,9 @@
             "email": "iletisim@mustafagun.com"
         }
     ],
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
     "require": {
         "monolog/monolog": "1.0.*"
     }

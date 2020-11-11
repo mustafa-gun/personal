@@ -19,7 +19,7 @@
   "author": "Mustafa Gün",
   "license": "ISC",
   "scripts": {
-    "test": ""
+    "test": "vendor/bin/phpunit"
   },
   "dependencies": {
     "imagesloaded": "^4.1.4"
