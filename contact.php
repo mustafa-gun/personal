@@ -35,7 +35,7 @@
         }
 
         .col-md-9 {
-            background: #fff;
+            background: #ebecf5;
             padding: 3%;
             border-top-right-radius: 0.5rem;
             border-bottom-right-radius: 0.5rem;

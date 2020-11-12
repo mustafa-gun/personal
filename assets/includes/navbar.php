@@ -5,16 +5,19 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="./">Ana Sayfa</a>
+                <a class="nav-link mx-2" href="./">Ana Sayfa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">Hakkımda</a>
+                <a class="nav-link mx-2" href="about.php">Hakkımda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="subtitle.php">Çeviri</a>
+                <a class="nav-link mx-2" href="subtitle.php">Altyazı</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.php">İletişim</a>
+                <a class="nav-link mx-2" href="article.php">Haber</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.php">İletişim</a>
             </li>
             <span class="navbar-text">
                 <ul class="nav navbar-nav navbar-right ml-auto nav-flex-icons">

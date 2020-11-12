@@ -19,6 +19,7 @@
   --dull-pink: #5f1d39;
   --black: #000;
   --bg-gray: #6c757d;
+  --bg-light-gray: #f3f0ff;
 }
 #home {
   background-color: #000 !important;
@@ -43,6 +44,12 @@ body {
 a {
   color: var(--dull-red) !important;
   text-decoration: none !important;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--dull-red) !important;
+  text-shadow: 0 0 1px var(--dark-gray);
 }
 
 .pt-6 {
@@ -72,7 +79,8 @@ a {
   filter: invert(0.2);
 }
 
-.fa-github, .fa-linkedin {
+.fa-github,
+.fa-linkedin {
   margin-top: 2px;
   color: #e0e0e0;
 }
@@ -86,12 +94,26 @@ a {
 }
 
 .active {
-  text-shadow: 0 1px 2px #d9d9ec !important;
+  background-image: radial-gradient(white, transparent 70%);
+  /*text-shadow: 0 1px 2px #d9d9ec !important;*/
 }
+
 
 /* Navbar END */
 
 /* Jumbotron */
+.jumbotron {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.page-info {
+  /* Altyazı ve Haber sayfaları jumbotron */
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+}
+
 #img-person {
   width: 200px;
   height: auto;
@@ -120,7 +142,8 @@ a {
 }
 
 .row {
-  height: 90vh;
+  height: 100%;
+  margin-bottom: 2rem;
 }
 
 /* Jumbotron END */
@@ -149,7 +172,6 @@ a {
   color: rgb(233, 233, 233);
 }
 
-
 /* Hakkımda END*/
 
 /* İletişim buton hover */
@@ -159,9 +181,47 @@ a {
   box-shadow: 0 1px 6px 0px black;
 }
 
-/* ALTYAZI */
+/* HABER */
 
-/* Altyazı END */
+.page-content {
+  background-color: var(--bg-light-gray);
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-direction: column;
+  color: var(--dark2);
+  max-width: 1024px;
+}
+
+.article {
+  position: relative;
+}
+
+.article h3 {
+  color: var(--dull-red1);
+}
+
+.article figure {
+  width: 300px;
+  height: 100%;
+  margin: 0 1rem 0 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+.article-img {
+  width: inherit;
+  overflow: hidden;
+  height: auto;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+/* Haber END */
 
 /* Mobil Görünüm */
 
@@ -172,7 +232,7 @@ a {
   .navbar {
     position: fixed !important;
     width: 100%;
-    z-index: 1;
+    top: 0;
   }
   .nav-flex-icons {
     flex-direction: row !important;
@@ -195,6 +255,9 @@ a {
   }
   .about-title {
     text-align: center;
+  }
+  .page-content {
+    margin-top: 5rem;
   }
 }
 

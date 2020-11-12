@@ -226,6 +226,7 @@
             .card:focus-within {
                 align-items: center;
                 filter: grayscale(.8);
+                color: whitesmoke !important;
             }
 
             .card:hover:before,
@@ -265,7 +266,11 @@
     <?php include_once 'assets/includes/navbar.php'; ?>
     <div class="container-fluid">
         <div class="container">
-            <div class="row justify-content-center pt-5 ">
+            <div class="jumbotron page-info mt-5" style="background-image: url(assets/img/subtitle.jpg);">
+                <h1>Türkçe Altyazı</h1>
+                <h5>Hobi olarak Türkçe altyazı çevirmenliği yapıyorum.</h5>
+            </div>
+            <div class="row justify-content-center">
                 <main class="page-content">
                     <?php foreach ($subConn as $subs) : ?>
                         <a href="https://www.planetdp.org/title/<?= $subs['subtitle_id']; ?>" class="card" style="background-image: url(https://mustafagun.com/uploads/mg<?= $subs['subtitle_id']; ?>.jpg) ;" target="_blank">
