@@ -93,11 +93,6 @@ a:hover {
   text-shadow: 0 1px 3px #eaeaea !important;
 }
 
-.active {
-  background-image: radial-gradient(white, transparent 70%);
-  /*text-shadow: 0 1px 2px #d9d9ec !important;*/
-}
-
 
 /* Navbar END */
 
