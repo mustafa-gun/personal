@@ -12,6 +12,8 @@
         "test": "vendor/bin/phpunit"
     },
     "require": {
-        "monolog/monolog": "1.0.*"
+        "monolog/monolog": "1.0.*",
+        "php" : "^5.5 || ^7.0",
+        "ext-mbstring": "*"
     }
 }
