@@ -37,12 +37,14 @@
         }
 
         .page-content {
-            display: grid;
-            grid-gap: 1rem;
-            padding: 1rem;
+            display: flex;
+            padding: .2rem;
             max-width: 1024px;
             margin: 0 auto;
             font-family: var(--font-sans);
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
 
         @media (max-width:699px) {
@@ -59,7 +61,7 @@
 
             .card {
                 width: 45% !important;
-                height: 7% !important;
+                height: 200px !important;
                 margin: 3px;
             }
 
@@ -105,7 +107,8 @@
             align-items: flex-end;
             overflow: hidden;
             padding: .2rem;
-            width: 100%;
+            width: 23%;
+            height: 350px;
             text-align: center;
             color: whitesmoke;
             background-size: cover;
@@ -115,6 +118,7 @@
             border: 1px black;
             transition: .3s;
             text-decoration: none;
+            margin: .5rem;
         }
 
 
@@ -225,7 +229,7 @@
             .card:hover,
             .card:focus-within {
                 align-items: center;
-                filter: grayscale(.8);
+                filter: grayscale(.4);
                 color: whitesmoke !important;
             }
 
@@ -257,32 +261,47 @@
             .card:focus-within .content>*:not(.title) {
                 transition-duration: 0s;
             }
+
+            span.mvPoint {
+                text-shadow: 0 2px 3px white;
+            }
         }
     </style>
 </head>
-<? $subConn = $connection->query("SELECT * FROM subtitles ORDER BY id DESC", PDO::FETCH_ASSOC);?>
+<? $subConn = $connection->query("SELECT * FROM subtitles ORDER BY subPoint DESC", PDO::FETCH_ASSOC);?>
 
 <body>
     <?php include_once 'assets/includes/navbar.php'; ?>
     <div class="container-fluid">
-        <div class="container">
-            <div class="jumbotron page-info mt-5" style="background-image: url(assets/img/subtitle.jpg);">
+        <div class="container mb-3" id="subTitle">
+            <div class="jumbotron page-info" style="background-image: url(assets/img/subtitle.jpg);">
                 <h1>Türkçe Altyazı</h1>
                 <h5>Hobi olarak Türkçe altyazı çevirmenliği yapıyorum.</h5>
             </div>
-            <div class="row justify-content-center">
-                <main class="page-content">
-                    <?php foreach ($subConn as $subs) : ?>
-                        <a href="https://www.planetdp.org/title/<?= $subs['subtitle_id']; ?>" class="card" style="background-image: url(https://mustafagun.com/uploads/mg<?= $subs['subtitle_id']; ?>.jpg) ;" target="_blank">
-                            <div class="content">
-                                <p class="titleEN"><?= $subs['nameEN'] ?></p>
-                                <?php if ($subs['nameTR'] != "") : ?>
-                                    <b class="titleTR">(<?= $subs['nameTR'] ?>)</b>
-                                <?php endif ?>
-                            </div>
-                        </a>
-                    <?php endforeach ?>
-                </main>
+            <?php
+            $limit = 8;
+            $query = "SELECT * FROM subtitles";
 
-            </div>
+            include 'assets/includes/page-set.php';
+
+            $show = "SELECT * FROM subtitles ORDER BY subPoint DESC LIMIT $starting_limit, $limit";
+
+            $r = $connection->prepare($show);
+            $r->execute();
+            ?>
+            <main class="page-content mb-5">
+                <? while($subs = $r->fetch(PDO::FETCH_ASSOC)): ?>
+                <a href="https://www.planetdp.org/title/<?= $subs['subtitle_id']; ?>" class="card" style="background-image: url(https://mustafagun.com/uploads/mg<?= $subs['subtitle_id']; ?>.jpg) ;" target="_blank">
+                    <div class="point p-1">
+                        <i class="fab fa-imdb fa-2x"></i> <span class="mvPoint pl-1"><?= $subs['subPoint'] ?></span></div>
+                    <div class="content">
+                        <p class="titleEN"><?= $subs['nameEN'] ?></p>
+                        <?php if ($subs['nameTR'] != "") : ?>
+                            <b class="titleTR">(<?= $subs['nameTR'] ?>)</b>
+                        <?php endif ?>
+                    </div>
+                </a>
+                <? endwhile; ?>
+                <? include 'assets/includes/pagination.php' ?>
+            </main>
         </div>
