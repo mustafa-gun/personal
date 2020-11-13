@@ -20,7 +20,7 @@
                 <div class="col-md-7 col-sm-6 mt-4">
                     <div class="info-img rounded-circle" style="margin-bottom: 10px !important; display: none;"></div>
                     <div class="clearfix" style="margin-bottom: 60px;">
-                        <h1 class="about-title">Ben <span class="dark-pink-text" style="font-weight: 900;">Kimim</span>?</h1>
+                        <h1 class="about-title">Ben <span class="text-danger">Kimim</span>?</h1>
                         <div class="hakkimda">
                             <p>
                                 <b>Merhaba,</b> <br>

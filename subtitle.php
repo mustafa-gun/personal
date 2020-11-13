@@ -80,20 +80,6 @@
             }
         }
 
-        @media (min-width: 700px) {
-            .page-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 800px) {
-            .page-content {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-
-
         .card {
             position: relative;
             display: flex;
@@ -112,14 +98,6 @@
             transition: .3s;
             text-decoration: none;
             margin: .5rem;
-        }
-
-
-
-        @media (min-width: 600px) {
-            .card {
-                height: 350px;
-            }
         }
 
         .card:before {
@@ -178,6 +156,7 @@
             bottom: 4rem;
             width: 25vh;
             font-weight: 600;
+            padding: 0 5px;
         }
 
         .copy {

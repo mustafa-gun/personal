@@ -33,6 +33,7 @@ html {
 
 body {
   font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 20px !important;
   color: var(--light-gray) !important;
   background-color: #0000 !important;
   background: linear-gradient(45deg, var(--night-blue), var(--dull-red1));
@@ -140,6 +141,7 @@ a:hover {
 
 .row {
   height: 100%;
+  align-items: center;
 }
 
 /* Jumbotron END */
@@ -166,6 +168,8 @@ a:hover {
 
 .hakkimda {
   color: rgb(233, 233, 233);
+  text-align: justify;
+  word-break: break-word;
 }
 
 /* Hakkımda END*/
