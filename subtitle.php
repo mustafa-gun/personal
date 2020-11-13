@@ -251,7 +251,7 @@
                 <h5>Hobi olarak Türkçe altyazı çevirmenliği yapıyorum.</h5>
             </div>
             <?php
-            $limit = 8;
+            $limit = 12;
             $query = "SELECT * FROM subtitles";
 
             include 'assets/includes/page-set.php';
