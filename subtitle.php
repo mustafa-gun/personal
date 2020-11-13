@@ -14,17 +14,10 @@
         :root {
             --d: 700ms;
             --e: cubic-bezier(0.19, 1, 0.22, 1);
-            --font-sans: "Lato", sans-serif !important;
-            --font-serif: "Lato", sans-serif !important;
         }
 
         * {
             box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
         }
 
         body {
