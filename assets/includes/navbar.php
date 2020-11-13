@@ -22,8 +22,8 @@
             <span class="navbar-text">
                 <ul class="nav navbar-nav navbar-right ml-auto nav-flex-icons">
                     <li>
-                        <a href="https://github.com/mustafa-gun" target="_blank">
-                            <i class="fab fa-github fa-2x social"></i>
+                        <a href="https://github.com/mustafa-gun" target="_blank" style="font-size: 24px;">
+                            <i class="fab fa-github fa-lg social"></i>
                         </a>
                     </li>
                     <li>

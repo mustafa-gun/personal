@@ -1,6 +1,6 @@
 <meta name="author" content="Mustafa Gün">
 <meta name="robots" content="all" />
-
+<?header('Cache-Control: public, max-age=30672000, immutable');?>
 <!-- Favicons -->
 <link rel="shortcut icon" href="favicon.svg" />
 <link rel="apple-touch-icon" href="favicon.svg" />
