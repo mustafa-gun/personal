@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="home">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/person.css">
 </head>
 
-<body>
+<body id="home">
     <?php include_once 'assets/includes/navbar.php'; ?>
     <div class="container-fluid home">
         <div class="container">

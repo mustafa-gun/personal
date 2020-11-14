@@ -458,6 +458,9 @@ a.ai-element {
   .page-info h5 {
     font-size: 0.85rem;
   }
+  #article-container {
+    padding-top: .1rem !important;
+  }
   .article-content {
     font-size: .9rem;
   }

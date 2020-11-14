@@ -12,7 +12,7 @@
 
 <body>
     <?php include_once 'assets/includes/navbar.php'; ?>
-    <div class="container mt-5">
+    <div class="container mt-5" id="article-container">
         <div class="jumbotron page-info mt-5" style="background-image: url(assets/img/article.jpg);">
             <h1>Haberler</h1>
             <h5>PlanetDP sitesinde editörlüğünü yaptığım haberler.</h5>

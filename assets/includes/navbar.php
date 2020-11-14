@@ -19,7 +19,7 @@
             <li class="nav-item">
                 <a class="nav-link mx-2" href="contact.php">İletişim</a>
             </li>
-            <span class="navbar-text">
+            <span class="navbar-text mt-1">
                 <ul class="nav navbar-nav navbar-right ml-auto nav-flex-icons">
                     <li>
                         <a href="https://github.com/mustafa-gun" target="_blank" style="font-size: 24px;">
@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/mustafa-gün">
+                        <a href="https://www.linkedin.com/in/mustafa-gün-73252a146/" target="_blank">
                             <img src="https://mustafagun.com/img/linkedin_logo.svg" class="social">
                         </a>
                     </li>
