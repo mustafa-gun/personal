@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,9 +146,6 @@
         $contactComment = $_POST['contactComment'];
 
         // PHPMailer classes into the global namespace
-
-        // Base files 
-
 
         // create object of PHPMailer class with boolean parameter which sets/unsets exception.
         $mail = new PHPMailer(true);
