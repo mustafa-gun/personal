@@ -21,7 +21,12 @@
   "scripts": {
     "test": "vendor/bin/phpunit"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafa-gun/personal.git"
+  },
   "dependencies": {
     "imagesloaded": "^4.1.4"
-  }
+  },
+  "homepage": "/index.php"
 }
